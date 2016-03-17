@@ -19,15 +19,7 @@ function palindromicNumberGenerator(num) {
 }
 
 function isPalindrome(num) {
-    var n = num;
-    var rev = 0;
-
-    while(n > 0) {
-        rev = rev * 10 + n % 10;
-        n =Math.floor(n / 10)
-    }
-
-    if(num === rev) {
+    if(num === reverseNum(num)) {
         return true;
     }
     return false;
